@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.ajaykhanna.chatt.SettingsActivity">
+    <include layout="@layout/app_bar_layout" android:id="@+id/settingsToolBar"></include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/settingsToolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/francepresident" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Display Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnChangeImage"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="CHANGE IMAGE" />
+
+    <Button
+        android:id="@+id/btnChangeStatus"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtName"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:background="@color/colorAccent"
+        android:text="CHANGE STATUS"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Hi there ! I'm using Chatt app"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+</RelativeLayout>

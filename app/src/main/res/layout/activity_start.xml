@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.ajaykhanna.chatt.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="83dp"
+        android:layout_marginTop="243dp"
+        android:text="Welcome to chatt"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStartReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="ALREADY HAVE ACCOUNT"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnStartReg"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/need_new_account"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
